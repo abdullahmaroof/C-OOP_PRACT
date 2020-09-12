@@ -25,14 +25,21 @@ class student{
 			cout<<"* Student department: "<<dep<<endl;
 			cout<<"------------------------------"<<endl<<endl;
 		}
+		~student()
+		{}
 };
 int main()
 {
-	student std1, std2;
+	student std1, std2, std3;
 	std1.getdata("Abdullah Maroof","2A","BS Software Engineering");
 	std2.getdata("Umar Maroof","2A","BS Software Engineering");
 	std2.getdata("Umar Maroof","2A","BS Software Engineering");
+	std3.getdata("Aneesa Ashraf","2A","BS Software Engineering");
+	std3.getdata("Aneesa Ashraf","2A","BS Software Engineering");
+	std3.getdata("Aneesa Ashraf","2A","BS Software Engineering");
+	cout<<"-----------------Students Data------------------"<<endl;
 	std1.showdata();
 	std2.showdata();
+	std3.showdata();
 	return 0;
 }
